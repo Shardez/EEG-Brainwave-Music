@@ -28,6 +28,7 @@
 
 ; Parse incoming string from Python app, use EEG data to calculate normalized difference between current (ax) and previous (oax) value, use it to schedule notes (as a product with current meditation value * 15), assign pitch and sustain parameters
 
+;(recording-start "C:/Projects/Portfolio/EEG-Brainwave-Music/bw_musicsample.wav")
 (while true
  (def response (.readLine inp))
  (def rline (str/split response #" "))
@@ -78,4 +79,4 @@
  )
 
 )
-
+;(recording-stop)
